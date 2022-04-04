@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+section {
+    padding: 3rem 0;                                  
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.overview-text {
+    background-color: rgb(35, 37, 37);
+    text-align: center;
+} 
+
+.contact-section {
+    background-color: rgb(11, 25, 37);
+}
