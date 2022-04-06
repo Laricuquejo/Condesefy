@@ -10,6 +10,7 @@ h2,
 h3,
 p {
     margin: 0;
+    padding-top: 60px;
 }
 
 body {
@@ -33,7 +34,7 @@ h3 {
     font-family: var(--ff-accent);
     font-weight: 900;
     line-height: 1;
-    margin-bottom: 1em;
+    margin-bottom: -1em;
 }
 
 img {
@@ -47,7 +48,7 @@ img {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     background-color: rgb(255, 255, 255);
-    overflow: visible;
+    overflow: hidden;
 }
 
 input[type=text] {
@@ -58,12 +59,27 @@ input[type=text] {
     font-size: 17px;
 }
 
+.navbar .icon {
+    display: none;
+}
+
 .navbar a {
     float: right;
     display: block;
     color: rgb(35, 37, 37);
     padding: 14px 16px;
     text-decoration: none; /* to quit the underline */
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+      padding: 0.5em;
+      margin: 0.1em 0.1em;
+      
+    }
 }
 
 .overview-text {
